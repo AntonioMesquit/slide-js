@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: .3s;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60rem;
+    height: 20rem;
+    padding-left: 20rem;
+    z-index: 3;
+    font-weight: 300;
+}
+.sobre{
+    position: absolute;
+    font-size: 3.5rem;
+    right: -11rem;
+}
+.card-image{
+    position: relative;
+}
+.tanya{
+    width: 100%;
+    z-index: 2;
+}
+.inputs{
+    position: absolute;
+    bottom: -3rem;
+    left: 10%;
+    display: flex;
+}
+button{
+    border: none;
+    background-color: white;
+    padding: 2rem;
+    cursor: pointer;
+}
+.antes{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.depois{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.nt{
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+.curva{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.quotes{
+    position: absolute;
+    top: -6.5rem;
+    left: 11rem;
+}
+.bg{
+    position: absolute;
+    top: -7rem;
+    left: -8rem;
+    z-index: -1;
+}
+@media screen and (max-width:1200px){
+   .card{
+    flex-direction: column-reverse;
+    margin-right: 10rem;
+   }
+   .card-image{
+    box-shadow: 100px 5px 1000px 10px rgba(0, 0, 0, 0.499);
+   }
+   .image{
+    width: 50%;
+   }
+   .nt{
+    bottom: -1rem;
+   }
+   .bg{
+    width: 65%;
+    left: 18%;
+    top: -4rem;
+   }
+   .card-image{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    
+   }
+   .text{
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-bottom: 20rem;
+   }
+   .inputs{
+    left: 42%;
+    bottom: -3rem;
+   }
+   .text{
+    width: 20rem;
+   }
+   .quotes{
+    left: 35%;
+   }
+   .curva{
+    width: 100%;
+   }
+}
+@media screen and (max-width:500px){
+    .image{
+        width: 25rem;
+    }
+    .bg{
+        width: 25rem;
+
+    }
+    .inputs{
+        left: 35%;
+        bottom: -3.5rem;
+    }
+    .text-z{
+        font-size: 2.5rem;
+    }
+    .nt{
+        bottom: -20rem;
+        left: 30%;
+    }
+}
